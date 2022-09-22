@@ -1,0 +1,107 @@
+<!--
+    URLAUB
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10, IE=9, IE=8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Mitarbeiterportal</title>
+
+    <link href="mystyle.css" rel="stylesheet" type="text/css" media="screen, handheld, projection, tty, tv">
+
+</head>
+
+<body id="duty-details" class="duties" ontouchstart="" style="cursor: default;">
+
+    <div class="wrapper">
+        <div class="headline clearfix">
+            <span class="button-add back" onclick="window.history.back()">
+                <span>Zurück zur vorherigen Ansicht</span>
+            </span>				
+        </div>
+        <div class="duty-components-popup usecase-content">
+            <div class="headline hidden" lang="de">
+                <span class="label">
+                    <span class="duties-custom-title">
+                        <span class="duties-default-title">
+                            Dienstplan</span>
+                    </span>
+                </span>
+                <span class="date">23.08.2022</span>
+            </div>
+            <div id="loadingscreen" style="display: none;"></div>
+            <div id="tableview" style="display: block;"><script type="text/javascript">
+
+$(document).ready(function() {
+    $('.headline').first().prepend($('#additional-buttons').children());
+    $('#additional-buttons').remove();
+    DownloadPrintService.init('TABLET');
+});
+
+function confirmDutyView(beginDate) {
+    var url = '_-json-confirm-allocation';
+    var data = JSON.stringify({date : beginDate});
+    
+    $.ajax({type:'POST', url:url, data:data, contentType:'application/json', success: function(result) {
+        console.log("Allocations on day " + beginDate + " confirmed: " + result.success);
+        if (result.success) {
+            $('#confirm-resource-button').hide();
+        }
+    }});
+}
+</script>
+    
+<div class="allocations">
+<div id="vScroller1" class="vScroller">
+    <div id="vScrollee1" class="vScrollee" style="top:0px;">
+        <table class="print-only-on-printer table-header-block">
+<tbody><tr>
+    <td>
+        <span class="title">Abwesenheit für:</span>
+        <span class="user-name">TOBIAS SCHELER,</span>
+        <span class="personnel-number">804319</span>
+    </td>
+</tr>
+</tbody></table>
+<div class="allocation">
+<div class="table-header-block allocation-info timesegment type_absence shortname_Urlaub   shortname_Urlaub planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+    <table class="details-for-not-duties">
+        <tbody>
+            <tr>
+                <td>Urlaub, Tarifurlaub</td>
+            </tr>
+            <tr>
+                <td>von 23.08.2022 bis 05.09.2022</td>
+            </tr>
+            </tbody>
+    </table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="buttons">
+<div class="duty-details-navigation">
+    <div id="up-button" class="button" onclick="onScrollUpStart();">&nbsp;</div>
+    <div id="down-button" class="button" onclick="onScrollDnStart();">&nbsp;</div>
+</div>
+</div>
+<div class="print-build-version">
+<hr class="print-line">
+</div>
+<div id="calendar-data" class="hidden">
+<div id="previous">_-duty-details-day?beginDate=2022-08-22&amp;showUserInfo=true&amp;allocatedEmployeeId=727458&amp;_=1663868185653</div>
+<div id="today">_-duty-details-day?beginDate=2022-09-22&amp;showUserInfo=true&amp;allocatedEmployeeId=727458&amp;_=1663868185653</div>
+<div id="next">_-duty-details-day?beginDate=2022-08-24&amp;showUserInfo=true&amp;allocatedEmployeeId=727458&amp;_=1663868185653</div>
+<div id="info">23.08.22</div>
+</div>
+</div>
+        </div>
+    </div>
+</body>
+
+</html>
