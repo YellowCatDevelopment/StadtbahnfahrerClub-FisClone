@@ -1,0 +1,670 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10, IE=9, IE=8">
+    <!-- guarantees that IE9 use the configuration of IE9 instead of IE7/8 to eliminate IE7/8 bugs  -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>IVU.plan Mitarbeiterportal</title>
+
+    <!-- <meta name="viewport" content="width=1048">
+    <link href="/mbweb/,DanaInfo=fahrerinfo,Port=20000,CT=css+get?file=reset-min.css" rel="stylesheet" type="text/css"
+        media="screen, handheld, projection, tty, tv"> -->
+    <link href="mystyle.css" rel="stylesheet" type="text/css" media="screen, handheld, projection, tty, tv">
+    <link href="defaultabsences.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="duties" class=" duties" ontouchstart="" style="cursor: default;">
+
+    <div class="wrapper">
+        <div class="headline">
+            <ul class="usecase-switch" lang="de">
+                <li class="active">
+                    <a href="#" class="">
+                        <span class="duties-custom-title">
+                            <span class="duties-default-title">
+                                Dienstplan</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="right date-navigation-cont">
+                <span class="date-navigation-info"></span>
+                <ul class="date-navigation">
+                    <li id="prev-button" onclick="">
+                        <a href="#"></a>
+                    </li>
+                    <li id="today-button" onclick="">
+                        <a href="#">Heute</a>
+                    </li>
+                    <li id="next-button" onclick="">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="usecase-content">
+            <div id="tableview" style="display: block;">
+                <table class="print-only-on-printer table-header-block">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="title">Dienstplan für:</span>
+                                <span class="user-name">TOBIAS SCHELER,</span>
+                                <span class="personnel-number">804319</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="duties calendar-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Montag</th>
+                            <th>
+                                Dienstag</th>
+                            <th>
+                                Mittwoch</th>
+                            <th>
+                                Donnerstag</th>
+                            <th>
+                                Freitag</th>
+                            <th>
+                                Samstag</th>
+                            <th>
+                                Sonntag</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day">
+                                <a class="allocation-day click-area clickable"
+                                    href="duty-details?beginDate=2022-07-25&amp;allocatedEmployeeId=727458">
+                                    <!-- duty-details?beginDate=2022-07-25&amp;allocatedEmployeeId=727458 -->
+                                    <div class="day-info">
+                                        <div class="date">25.07.22</div>
+                                    </div>
+
+                                    <div class="allocation-container display-full">
+                                        <div
+                                            class="allocation-info singleduty shortname_7519   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                            <div class="duty-nr ">
+                                                7519</div>
+                                            <div class="time-location-info begin">
+                                                <span class="time begin">16:51</span>
+                                                <span class="location begin"></span>
+                                            </div>
+                                            <div class="time-location-info end">
+                                                <span class="time end">01:49+</span>
+                                                <span class="location end"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+            </td>
+            <td class="day">
+                <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-23&amp;allocatedEmployeeId=727458',0);">
+                    <div class="day-info">
+                        <div class="date">26.07.22</div>
+                    </div>
+
+                    <div class="allocation-container display-full">
+                        <div
+                            class="allocation-info name-only timesegment type_absence shortname_Urlaub   shortname_Urlaub planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                            <div class="allocation-name ">
+                                Urlaub</div>
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td class="day">
+                <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-07-27&amp;allocatedEmployeeId=727458',0);">
+                    <div class="day-info">
+                        <div class="date">27.07.22</div>
+                    </div>
+
+                    <div class="allocation-container display-full reduce-to-medium">
+                        <div
+                            class="allocation-info name-only timesegment type_absence shortname_Urlaub   shortname_Urlaub planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                            <div class="allocation-name ">
+                                Urlaub</div>
+                        </div>
+                        <div
+                            class="allocation-info name-only timesegment type_offday shortname_Z-Frei   shortname_Z-Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                            <div class="allocation-name ">
+                                Z-Frei</div>
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td class="day">
+                <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-07-28&amp;allocatedEmployeeId=727458',0);">
+                    <div class="day-info">
+                        <div class="date">28.07.22</div>
+                    </div>
+
+                    <div class="allocation-container display-full reduce-to-medium">
+                        <div
+                            class="allocation-info name-only timesegment type_absence shortname_Urlaub   shortname_Urlaub planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                            <div class="allocation-name ">
+                                Urlaub</div>
+                        </div>
+                        <div
+                            class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                            <div class="allocation-name ">
+                                Frei</div>
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td class="day">
+                <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-07-29&amp;allocatedEmployeeId=727458',0);">
+                    <div class="day-info">
+                        <div class="date">29.07.22</div>
+                    </div>
+
+                    <div class="allocation-container display-full">
+                        <div
+                            class="allocation-info name-only timesegment type_absence shortname_Krank   shortname_Krank planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                            <div class="allocation-name ">
+                                Krank</div>
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td class="day">
+                <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-07-30&amp;allocatedEmployeeId=727458',0);">
+                    <div class="day-info">
+                        <div class="date">30.07.22</div>
+                    </div>
+
+                    <div class="allocation-container display-full">
+                        <div
+                            class="allocation-info name-only timesegment type_absence shortname_WoF   shortname_WoF planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                            <div class="allocation-name ">
+                                WoF</div>
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td class="day">
+                <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-07-31&amp;allocatedEmployeeId=727458',0);">
+                    <div class="day-info">
+                        <div class="date">31.07.22</div>
+                    </div>
+
+                    <div class="allocation-container display-full">
+                        <div
+                            class="allocation-info name-only timesegment type_absence shortname_Z-Tag002022   shortname_Z-Tag002022 planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                            <div class="allocation-name ">
+                                Z-Tag</div>
+                        </div>
+                    </div>
+                </a>
+            </td>
+            </tr>
+            <tr>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-01&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">01.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_absence shortname_A-Tag   shortname_A-Tag planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    A-Tag</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-02&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">02.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_SD002fHF6   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    SD/HF6</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">06:00</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">12:00</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-03&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">03.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_7423   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    7423</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">13:52</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">22:20</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-04&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">04.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-05&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">05.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-06&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">06.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-07&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">07.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Z-Frei   shortname_Z-Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Z-Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-08&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">08.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_7525   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    7525</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">18:12</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">01:55+</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-09&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">09.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_7515   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    7515</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">16:48</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">01:04+</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-10&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">10.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_9433   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    9433</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">14:42</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">23:40</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-11&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">11.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_9426   planning_level_shortname_Dispo status_Fundsache_Fundsache00201 status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    9426</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">14:00</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">22:21</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-12&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">12.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-13&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">13.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-14&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">14.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-15&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">15.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_9501   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    9501</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">15:04</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">22:44</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-16&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">16.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_7515   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    7515</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">16:56</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">00:42+</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-17&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">17.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_7509   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    7509</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">16:22</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">00:33+</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-18&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">18.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_9427   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_Konto status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    9427</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">14:02</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">22:33</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-19&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">19.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info singleduty shortname_9436   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="duty-nr ">
+                                    9436</div>
+                                <div class="time-location-info begin">
+                                    <span class="time begin">14:46</span>
+                                    <span class="location begin"></span>
+                                </div>
+                                <div class="time-location-info end">
+                                    <span class="time end">22:29</span>
+                                    <span class="location end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-20&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">20.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td class="day">
+                    <a class="allocation-day click-area clickable"
+                        href="#" dummy="DanaPutHref(location,'duty-details?beginDate=2022-08-21&amp;allocatedEmployeeId=727458',0);">
+                        <div class="day-info">
+                            <div class="date">21.08.22</div>
+                        </div>
+
+                        <div class="allocation-container display-full">
+                            <div
+                                class="allocation-info name-only timesegment type_offday shortname_Frei   shortname_Frei planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020druch0020APD status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                <div class="allocation-name ">
+                                    Frei</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+            </table>
+            <div id="calendar-data" class="hidden">
+                <div id="previous">_-duty-table?beginDate=2022-06-27&amp;_=1663856726495</div>
+                <div id="today">_-duty-table?beginDate=2022-09-22&amp;_=1663856726495</div>
+                <div id="next">_-duty-table?beginDate=2022-08-22&amp;_=1663856726495</div>
+                <div id="info"></div>
+            </div>
+            <div class="print-build-version">
+                <hr class="print-line">
+            </div>
+        </div>
+        <div id="loadingscreen" style="display: none;"></div>
+    </div>
+    </div>
+
+
+    <script language="javascript" id="dstb-id">dstb(0)</script>
+    <script language="javascript" id="dstimer">
+        //<![CDATA[
+        if (dschk() == 1) { if (typeof (dsSetTimers) != "undefined") { dsSetTimers(1663856697, 1663856697, 600, 2400, 300, 1663856726 - parseInt("" + (new Date()).getTime() / 1000), 1); } }
+    //]]>
+    </script>
+</body>
+
+</html>

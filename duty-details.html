@@ -1,0 +1,217 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10, IE=9, IE=8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>IVU.plan Mitarbeiterportal</title>
+
+    <link href="mystyle.css" rel="stylesheet" type="text/css" media="screen, handheld, projection, tty, tv">
+
+</head>
+
+<body id="duty-details" class="duties" ontouchstart="" style="cursor: default;">
+
+    <div class="wrapper">
+        <div class="headline clearfix">
+
+            <span class="button-add back" onclick="window.history.back()">
+                <span>Zurück zur vorherigen Ansicht</span>
+            </span>
+        </div>
+        <div class="duty-components-popup usecase-content">
+            <div class="headline hidden" lang="de">
+                <span class="label">
+                    <span class="duties-custom-title">
+                        <span class="duties-default-title">
+                            Dienstplan</span>
+                    </span>
+                </span>
+                <span class="date">19.09.2022</span>
+            </div>
+            <div id="loadingscreen" style="display: none;"></div>
+            <div id="tableview" style="display: block;">
+
+
+                <div class="allocations">
+                    <div id="vScroller1" class="vScroller">
+                        <div id="vScrollee1" class="vScrollee" style="top:0px;">
+                            <div class="allocation">
+                                <table class="print-only-on-printer table-header-block">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="title">Dienst für:</span>
+                                                <span class="user-name">STADTBAHNFAHRERCLUB,</span>
+                                                <span class="personnel-number">0123456789</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table
+                                    class="table-header-block allocation-info duty_header_attribute singleduty shortname_9429   planning_level_shortname_Dispo status_Fundsache_ohne status_Lehrfahrer_Nein status_Pause_normal status_Zuteilung_Plan status_anzeigen_anzeigen status_W_gewährt_INIT status_Änd_APD_Zuteilung0020durch0020Disposition status_Dienstkleidung_ohne status_Sperre_bearbeitbar">
+                                    <tbody>
+                                        <tr>
+                                            <td class="circlecol" rowspan="2">
+                                                <img class="circle"
+                                                    src="/mbweb/,DanaInfo=fahrerinfo,Port=20000+get?static=&amp;customer=ivu&amp;device=desktop&amp;file=images%2Fcircle-down.png">
+                                            </td>
+                                            <td>
+                                                <div class="desc">Datum</div>
+                                                <div class="cont">19.09.2022</div>
+                                            </td>
+                                            <td>
+                                                <div class="desc">Dienstnummer</div>
+                                                <div class="cont">9429</div>
+                                            </td>
+                                            <td>
+                                                <div class="desc">Beginn</div>
+                                                <div class="cont">14:18</div>
+                                            </td>
+                                            <td colspan="1">
+                                                <div class="desc">Ende</div>
+                                                <div class="cont">21:43</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="desc">Bezahlte Zeit</div>
+                                                <div class="cont">06:55</div>
+                                            </td>
+                                            <td>
+                                                <div class="desc">Schichtdauer</div>
+                                                <div class="cont">07:25</div>
+                                            </td>
+                                            <td colspan="2">
+                                                <div class="desc">Pausenregel</div>
+                                                <div class="cont">1x30</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="content">
+                                    <div class="tableview">
+                                        <table class="datatable with-header duty-components-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Linie</th>
+                                                    <th>Kurs</th>
+                                                    <th>Ext. Umlaufnummer</th>
+                                                    <th>Beginn</th>
+                                                    <th>Von</th>
+                                                    <th>Ablöserichtung</th>
+                                                    <th>Ende</th>
+                                                    <th>Nach</th>
+                                                    <th>Richtung</th>
+                                                    <th>Typ</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr
+                                                    class="duty-components-table-row duty_component type_long_name_Umlaufstück ">
+                                                    <td class="route_abbreviations">
+                                                        4</td>
+                                                    <td class="course_numbers">
+                                                        64</td>
+                                                    <td class="ext_number_vehicle_working">
+                                                        0464</td>
+                                                    <td class="start_time">
+                                                        14:18</td>
+                                                    <td class="start_location">
+                                                        NEU</td>
+                                                    <td class="relief_direction_to_abbreviation">
+                                                        SLB</td>
+                                                    <td class="end_time">
+                                                        16:08</td>
+                                                    <td class="end_location">
+                                                        NEU</td>
+                                                    <td class="relief_direction_from_abbreviation">
+                                                        SLB</td>
+                                                    <td class="type_long_name">
+                                                        Umlaufstück</td>
+                                                </tr>
+                                                <tr
+                                                    class="duty-components-table-row duty_component type_long_name_Unbezahlte0020Pause ">
+                                                    <td class="route_abbreviations">
+                                                    </td>
+                                                    <td class="course_numbers">
+                                                    </td>
+                                                    <td class="ext_number_vehicle_working">
+                                                    </td>
+                                                    <td class="start_time">
+                                                        16:18</td>
+                                                    <td class="start_location">
+                                                        S - NEUM</td>
+                                                    <td class="relief_direction_to_abbreviation">
+                                                    </td>
+                                                    <td class="end_time">
+                                                        16:48</td>
+                                                    <td class="end_location">
+                                                        S - NEUM</td>
+                                                    <td class="relief_direction_from_abbreviation">
+                                                    </td>
+                                                    <td class="type_long_name">
+                                                        Unbezahlte Pause</td>
+                                                </tr>
+                                                <tr
+                                                    class="duty-components-table-row duty_component type_long_name_Umlaufstück ">
+                                                    <td class="route_abbreviations">
+                                                        3</td>
+                                                    <td class="course_numbers">
+                                                        61</td>
+                                                    <td class="ext_number_vehicle_working">
+                                                        0361</td>
+                                                    <td class="start_time">
+                                                        16:52</td>
+                                                    <td class="start_location">
+                                                        NEU</td>
+                                                    <td class="relief_direction_to_abbreviation">
+                                                        THB</td>
+                                                    <td class="end_time">
+                                                        21:43</td>
+                                                    <td class="end_location">
+                                                        BDK</td>
+                                                    <td class="relief_direction_from_abbreviation">
+                                                        MEN</td>
+                                                    <td class="type_long_name">
+                                                        Umlaufstück</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="duty-details-navigation">
+                        <div id="up-button" class="button" onclick="">&nbsp;</div>
+                        <div id="down-button" class="button" onclick="">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="print-build-version">
+                    <hr class="print-line">
+                </div>
+                <div id="calendar-data" class="hidden">
+                    <div id="previous">
+                        _-duty-details-day?beginDate=2022-09-18&amp;showUserInfo=true&amp;allocatedEmployeeId=727458&amp;_=1663858204868
+                    </div>
+                    <div id="today">
+                        _-duty-details-day?beginDate=2022-09-22&amp;showUserInfo=true&amp;allocatedEmployeeId=727458&amp;_=1663858204868
+                    </div>
+                    <div id="next">
+                        _-duty-details-day?beginDate=2022-09-20&amp;showUserInfo=true&amp;allocatedEmployeeId=727458&amp;_=1663858204868
+                    </div>
+                    <div id="info">19.09.22</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
